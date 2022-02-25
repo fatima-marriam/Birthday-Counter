@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday Counter</title>
+    <title>Birthday Counter🎂</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -47,6 +47,7 @@
             nextyear = new Date().getFullYear();
         }
         comingYear.innerHTML = nextyear;
+        // document.write(birthDate + " " + "2021" + " " + birthMonth)
         function count(){
             const remain = new Date(`${nextyear}-${birthMonth}-${birthDate} 00:00:00`) - new Date();
             const days = Math.floor(remain / (1000 * 60 * 60 * 24));
